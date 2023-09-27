@@ -4,14 +4,23 @@ import Image from "next/image";
 import Bars from "./Bars";
 import Shares from "./Shares";
 import useClipboard from "react-use-clipboard";
+import React, { useState, useEffect } from "react";
 
 const Onboarding = () => {
+	const [host, setHost] = useState("");
+
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			setHost(window.location.host);
+		}
+	}, []);
+
 	const mailHandler = (e) => {
 		e.preventDefault();
 		window.location.href = `mailto:kolawolesewa60@gmail?body=Hi Adesewa @MorxUIUX. My name is ...`;
 	};
-	const text = location.host;
-	const [copy, setCopy] = useClipboard(text);
+
+	const [copy, setCopy] = useClipboard(null);
 
 	return (
 		<div>
@@ -61,15 +70,17 @@ const Onboarding = () => {
 									</button>
 								</form>
 
-								<Shares />
+								<Shares link={host} />
 
 								<div className="mt-6 flex text-center items-center border py-6 border-[#D9D9D9]">
 									<p className="px-4 xfold:px-10 text-base font-medium">
-										{text}
+										{host}
 									</p>
 
 									<button
-										onClick={setCopy}
+										onClick={() => {
+											setCopy(host);
+										}}
 										className="pl-2 xfold:pl-8 xs:pl-16 text-base font-medium"
 									>
 										Copy

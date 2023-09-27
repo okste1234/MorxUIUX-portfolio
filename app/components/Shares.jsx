@@ -7,8 +7,8 @@ import {
 	WhatsappShareButton,
 } from "react-share";
 
-const Shares = () => {
-	let host = location.hostname;
+const Shares = ({ link }) => {
+	let host = link;
 	const url = `https://${host}`;
 	const quote = "Hi, I'm Adesewa, @MorxUIUX. See Portfolio here";
 	const hashtag = "#MorxUIUX portfolio";
