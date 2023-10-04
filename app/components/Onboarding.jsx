@@ -82,7 +82,7 @@ const Onboarding = () => {
 
 								<div className="mt-6 flex text-center items-center border py-6 border-[#D9D9D9]">
 									<p className="xfold:px-4 sm:px-8 text-base font-medium">
-										{"morxuiux-portfolio.vrrcrl.app"}
+										{host}
 									</p>
 
 									<button
