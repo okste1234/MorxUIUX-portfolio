@@ -81,15 +81,15 @@ const Onboarding = () => {
 								<Shares link={host} />
 
 								<div className="mt-6 flex text-center items-center border py-6 border-[#D9D9D9]">
-									<p className="px-4 xfold:px-10 text-base font-medium">
-										{host}
+									<p className="xfold:px-4 sm:px-8 text-base font-medium">
+										{"morxuiux-portfolio.vrrcrl.app"}
 									</p>
 
 									<button
 										onClick={() => {
 											setCopy(host);
 										}}
-										className="pl-2 xfold:pl-8 xs:pl-16 text-base font-medium"
+										className="text-base font-medium"
 									>
 										Copy
 									</button>

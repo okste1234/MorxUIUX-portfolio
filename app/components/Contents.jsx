@@ -6,7 +6,7 @@ const Contents = () => {
 	const link = "https://www.figma.com/file/";
 
 	return (
-		<div className="w-full 2xl:w-2/3 xl:w-5/6 m-auto mt-2 mb-10 sm:mt-32 sm:mb-28 px-2 sm:px-[53px]">
+		<div className="w-full 2xl:w-2/3 xl:w-5/6 m-auto mt-2 mb-10 sm:mt-32 xl:mt-28 sm:mb-28 px-2 sm:px-[53px]">
 			<div className="text-[16px] mb-6 sm:mb-8 xl:mb-12">
 				<Link href={"#links"}>
 					<p className="font-semibold sm:font-bold sm:pt-3 lg:pt-6 xl:pt-0 pb-3 sm:pb-4 xl:pb-8 font2">

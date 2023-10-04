@@ -43,7 +43,6 @@ const Header = () => {
 							height={231}
 							width={228}
 							alt="img"
-							style={{ width: "auto", height: "auto" }}
 							className="pt-5 sm:pt-8 lg:pt-12 rounded-2xl w-[100px] xfold:w-[130px] sm:w-[228px]"
 						/>
 					</div>
