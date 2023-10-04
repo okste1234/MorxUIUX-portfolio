@@ -24,15 +24,23 @@ const Onboarding = () => {
 
 	return (
 		<div>
-			<div className="relative">
-				<div className="">
-					<div>
-						<div></div>
-						<div></div>
+			<div className="relative overflow-y-hidden">
+				<div className="-z-20">
+					<div className="absolute -left-20 xfold:-left-8 md:left-0 -top-4 md:top-48">
+						<div>
+							<span className="shadow-xl border-8 border-[#D6BBD7] rounded-[100%] p-24"></span>
+						</div>
+						<div className="">
+							<span className="bg-white absolute -left-28 shadow-2xl border-8 border-[#D6BBD7] rounded-[100%] p-24"></span>
+						</div>
 					</div>
-					<div>
-						<div></div>
-						<div></div>
+					<div className="absolute -right-20 xfold:-right-16 xs:right-8 bottom-10 lg:bottom-16">
+						<div>
+							<span className="shadow-2xl border-8 border-[#D6BBD7] rounded-[100%] p-24"></span>
+						</div>
+						<div className="">
+							<span className="bg-white absolute -left-32 shadow-2xl border-8 border-[#D6BBD7] rounded-[100%] p-24"></span>
+						</div>
 					</div>
 				</div>
 				<div className="w-5/6 m-auto flex flex-col">
@@ -92,7 +100,7 @@ const Onboarding = () => {
 						</dialog>
 					</div>
 
-					<div className="my-4">
+					<div className="my-4 z-20">
 						<div className="text-center flex-col flex items-center mb-3">
 							<Image
 								src="/img.png"
@@ -100,6 +108,7 @@ const Onboarding = () => {
 								width={167}
 								height={167}
 								priority
+								style={{ width: "auto", height: "auto" }}
 								className="object-cover object-center border rounded-full items-center"
 							/>
 							<h3 className="text-center text-xl mt-4 font-bold">@Morxuiux</h3>
@@ -154,20 +163,23 @@ const Onboarding = () => {
 									</div>
 								</button>
 							</div>
-							<button
-								onClick={(e) => mailHandler(e)}
-								id="mail"
-								className="mt-8"
-							>
-								<Image
-									src={"/Email.svg"}
-									width={34}
-									height={25}
-									className="w-auto h-auto"
-									alt="mail"
-								/>
-							</button>
+							<div>
+								<button
+									onClick={(e) => mailHandler(e)}
+									id="mail"
+									className="mt-8"
+								>
+									<Image
+										src={"/Email.svg"}
+										width={34}
+										height={25}
+										className="w-auto h-auto"
+										alt="mail"
+									/>
+								</button>
+							</div>
 						</div>
+						<div className="mb-20"></div>
 					</div>
 				</div>
 			</div>

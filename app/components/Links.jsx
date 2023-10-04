@@ -8,7 +8,13 @@ const Links = ({ href, text }) => {
 			target="_blank"
 			className="pt-4 flex gap-6 text-[#5C65B4]"
 		>
-			<Image src={"/docx.svg"} height={14} width={14} alt="link" />
+			<Image
+				src={"/docx.svg"}
+				height={14}
+				width={14}
+				alt="link"
+				style={{ width: "auto", height: "auto" }}
+			/>
 
 			<p className="font-medium text-sm xs:text-[16px] border-b border-[#5c65b4]">
 				{text}
