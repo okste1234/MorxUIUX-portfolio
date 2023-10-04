@@ -4,7 +4,6 @@ const Bars = ({ text, href }) => {
 	return (
 		<Link
 			href={href}
-			target={"_blank"}
 			className="rounded-xl navbar bg-[#AD76AE]/50 xs:w-[490px] sm:w-[576px] h-[63px] justify-center mb-4"
 		>
 			<div className="flex-auto justify-center">
